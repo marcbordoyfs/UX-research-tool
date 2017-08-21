@@ -1,0 +1,25 @@
+﻿<Window x:Class="UXTool_V4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UXTool_V4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        WindowState="Maximized" Background="Black">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Height="20" >
+
+            <MenuItem Header="_File">
+                <MenuItem x:Name="DirectoryButton" Header="Set _Directory" />
+                <Separator />
+                <MenuItem  x:Name="ExitButton" Header="_Exit" />
+            </MenuItem>
+            <MenuItem x:Name="RecordView" Header="_Recording Page" />
+            <MenuItem x:Name="EditView" Header="_Video Editing Page" />
+            <MenuItem x:Name="KeyframeView" Header="_Keyframe Page" />
+        </Menu>
+        <Frame x:Name="PageFrame" Width="auto" Height="auto" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>

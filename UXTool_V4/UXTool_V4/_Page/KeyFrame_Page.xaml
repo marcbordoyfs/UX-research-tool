@@ -1,0 +1,29 @@
+﻿<Page x:Class="UXTool_V4._Page.KeyFrame_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UXTool_V4._Page"
+      xmlns:hi ="clr-namespace:UXTool_V4"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="KeyFrame_Page">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto" Background="White">
+            <ItemsControl x:Name="Automatic" HorizontalContentAlignment="Stretch" Height="auto" Margin="0,0,0,0" >
+            </ItemsControl>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto"  Background="White">
+            <ItemsControl x:Name="Manual" HorizontalContentAlignment="Stretch" Width="auto" Height="auto" Margin="0,0,-0.4,0" >
+            </ItemsControl>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
